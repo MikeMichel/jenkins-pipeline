@@ -1,3 +1,7 @@
+#!groovy
+
+properties([pipelineTriggers([githubPush()])])
+
 node {
 
   stage 'Checkout repo with Code and Dockerfile'
